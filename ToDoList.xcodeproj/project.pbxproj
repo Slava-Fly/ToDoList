@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B6D6E7E2ECC8A6500279A38 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B6D6E7D2ECC8A6500279A38 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1B5DDF232ECC2D19004946E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,6 +27,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B53944D2ECC52D1001CD79C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B5DDF092ECC2D17004946E8 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5DDF222ECC2D19004946E8 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +50,17 @@
 		1B5DDF342ECC2D19004946E8 /* Exceptions for "ToDoList" folder in "ToDoList" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
+				Tests/ToDoListTests/ToDoListTests.swift,
 			);
 			target = 1B5DDF082ECC2D17004946E8 /* ToDoList */;
+		};
+		1BAB46902ECC830E00869792 /* Exceptions for "ToDoList" folder in "ToDoListTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/ToDoListTests/ToDoListTests.swift,
+			);
+			target = 1B5DDF212ECC2D19004946E8 /* ToDoListTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -44,18 +69,9 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				1B5DDF342ECC2D19004946E8 /* Exceptions for "ToDoList" folder in "ToDoList" target */,
+				1BAB46902ECC830E00869792 /* Exceptions for "ToDoList" folder in "ToDoListTests" target */,
 			);
 			path = ToDoList;
-			sourceTree = "<group>";
-		};
-		1B5DDF252ECC2D19004946E8 /* ToDoListTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ToDoListTests;
-			sourceTree = "<group>";
-		};
-		1B5DDF2F2ECC2D19004946E8 /* ToDoListUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ToDoListUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6D6E7E2ECC8A6500279A38 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				1B5DDF0B2ECC2D17004946E8 /* ToDoList */,
-				1B5DDF252ECC2D19004946E8 /* ToDoListTests */,
-				1B5DDF2F2ECC2D19004946E8 /* ToDoListUITests */,
 				1B5DDF0A2ECC2D17004946E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			);
 			name = ToDoList;
 			packageProductDependencies = (
+				1B6D6E7D2ECC8A6500279A38 /* SnapKit */,
 			);
 			productName = ToDoList;
 			productReference = 1B5DDF092ECC2D17004946E8 /* ToDoList.app */;
@@ -137,14 +153,12 @@
 				1B5DDF1E2ECC2D19004946E8 /* Sources */,
 				1B5DDF1F2ECC2D19004946E8 /* Frameworks */,
 				1B5DDF202ECC2D19004946E8 /* Resources */,
+				1B53944D2ECC52D1001CD79C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1B5DDF242ECC2D19004946E8 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1B5DDF252ECC2D19004946E8 /* ToDoListTests */,
 			);
 			name = ToDoListTests;
 			packageProductDependencies = (
@@ -165,9 +179,6 @@
 			);
 			dependencies = (
 				1B5DDF2E2ECC2D19004946E8 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1B5DDF2F2ECC2D19004946E8 /* ToDoListUITests */,
 			);
 			name = ToDoListUITests;
 			packageProductDependencies = (
@@ -208,6 +219,9 @@
 			);
 			mainGroup = 1B5DDF002ECC2D16004946E8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1B6D6E7C2ECC8A6500279A38 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1B5DDF0A2ECC2D17004946E8 /* Products */;
 			projectDirPath = "";
@@ -291,12 +305,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5H4N5Q6422;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +333,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5H4N5Q6422;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,6 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -447,6 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -569,6 +585,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B6D6E7C2ECC8A6500279A38 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B6D6E7D2ECC8A6500279A38 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B6D6E7C2ECC8A6500279A38 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B5DDF012ECC2D16004946E8 /* Project object */;
 }

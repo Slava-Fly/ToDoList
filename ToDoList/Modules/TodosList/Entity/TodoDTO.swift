@@ -1,5 +1,5 @@
 //
-//  TodoEntity.swift
+//  TodoDTO.swift
 //  ToDoList
 //
 //  Created by Славка Корн on 19.11.2025.

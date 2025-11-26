@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SnapKitPlayground (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ToDoList.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1B5DDF082ECC2D17004946E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B5DDF212ECC2D19004946E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B5DDF2B2ECC2D19004946E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
